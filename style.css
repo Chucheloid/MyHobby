@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Comic Sans Custom';
+    src: url('ComicSansMS.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Comic Sans Custom', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMTEnIGhlaWdodD0nMTExJz4gPHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nIzAyNjYwMCcvPiA8ZyB0cmFuc2Zvcm09J3JvdGF0ZSgyMSwgNTUuNSwgNTUuNSknPiA8cGF0aCBkPSJNIDU1LjUgNS41NDk5OTk5OTk5OTk5OTcgTCA3MC40MTI4ODIwMTUyMjQyOCA0MC41ODcxMTc5ODQ3NzU3MTYgTCAxMDUuNDUgNTUuNSBMIDcwLjQxMjg4MjAxNTIyNDI4IDcwLjQxMjg4MjAxNTIyNDI4IEwgNTUuNSAxMDUuNDUgTCA0MC41ODcxMTc5ODQ3NzU3MTYgNzAuNDEyODgyMDE1MjI0MjggTCA1LjU0OTk5OTk5OTk5OTk5NyA1NS41MDAwMDAwMDAwMDAwMSBMIDQwLjU4NzExNzk4NDc3NTcxIDQwLjU4NzExNzk4NDc3NTcxNiBaIiBmaWxsPSIjM2VhMzE5IiBmaWxsLW9wYWNpdHk9IjAuNSIgc3Ryb2tlPSJub25lIi8+IDwvZz48L3N2Zz4=");
+    background-size: 111px 111px;
+    animation: driftBackground 12s ease-in-out infinite;
+}
+@keyframes driftBackground {
+    0% {
+        background-position: 0px 0px;
+    }
+    25% {
+        background-position: 60px 30px;
+    }
+    50% {
+        background-position: 30px 60px;
+    }
+    75% {
+        background-position: -20px 10px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-shadow: 0px 0px 10px white;
+}
+img {
+    display: grid;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 8px rgba(2, 162, 39, 1.5));
+    transition: transform 0.5s ease;
+    border-radius: 15%;
+    margin-bottom: 3%;
+}
+button {
+    text-align: center;
+    color: rgb(11, 42, 13);
+    display: block;
+    margin: 0 auto;
+    border: green;
+    border-radius: 15%;
+    padding: 2% 2%;
+    background-color: maroon;
+    filter: drop-shadow(0px 0px 30px rgba(2, 50, 39, 1.5));
+    transition: background 0.3s ease;
+    text-shadow: 0px 0px 10px white;
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+button, input, select, textarea {
+    font-family: inherit;
+}
+
+button:hover {
+  background-color: #07ae3c;
+}
+img:hover {
+    transform: scale(1.1);
+}
